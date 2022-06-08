@@ -63,6 +63,7 @@ body {
   overflow: hidden;
   outline: none;
   margin-left: 40%;
+  margin-top:2%;
   -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 5s; /* Firefox < 16 */
   -ms-animation: fadein 5s; /* Internet Explorer */
@@ -184,7 +185,7 @@ h1{
 }
 @keyframes slide-up {
   from {
-    margin-top: 30%;
+    margin-top: 20%;
 
   }
   to {

@@ -8,6 +8,7 @@ import { useState } from 'react'
 const info = ["Hello, I am Aksel!", "Currently a MSc student @ KTH Stockholm.", "I am crazy about Thai boxing and cooking as well as...", "..data science and web development. Check me out!"]
 const buttontext = ["CLICK ME", "ABOUT ME"]
 const testTodo = "TODO:"
+let isDisabled = false;
 
 const HomeView = () => {
   const [state, setState] = useState('start')
@@ -24,10 +25,10 @@ const HomeView = () => {
   return (
 
     <div>
-      
+
       <span className="bubble">
  
-        <ButtonTest text={buttontext[0]} addBubble={hej} />
+      <ButtonTest text={buttontext[0]} addBubble={hej} disabled={isDisabled}/>
 
         {state!='start' && <Speechbubble text={state==='bubble' ? info[0] : info[0]}/>}
         {(state!='start' && state!='bubble') && <Speechbubble text={state==='bubble1' ? info[1] : info[1]}/>}
